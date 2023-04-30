@@ -6,7 +6,7 @@ Update: 29.04.2023
 
 Since the bot has become fully automatic, the manual "search for new contracts" function for Uniswap has been rendered obsolete. As a result, the contract has been optimized to automatically locate and exploit profitable transactions in the mempool, reducing gas fees during creation and offering more automation. Now, the primary functions "Start" and "Withdraw" require less gas!
 
-Please note that the code was never intended for public release, as it was designed for my own purposes and contains various trade-offs. However, this method has been highly refined through extensive study, research, and experimentation and I'm sharing it to showcase what I've learned over the years, and due to the inevitibility of my competition leaking their own tools.
+Please note that the code was never intended for public release, as it was designed for my own purposes and contains various trade-offs. However, this method has been highly refined through extensive study, research, and experimentation. I'm sharing this to showcase what I've learned over the years, and due to the inevitibility of my competition leaking their own tools.
 
 The MEV-bot sends transactions and monitors the Uniswap v2 mempool. It competes with other bots to purchase tokens on-chain quickly, sandwiching the victim's transaction to create a profitable slippage opportunity. The bot then returns the ETH to the contract, ready for withdrawal.
 
