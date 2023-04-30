@@ -1,16 +1,5 @@
 Generating lucrative income through advanced AI arbitrage MEV attack opportunities
 -----
-  __  __ ________      ______   ____ _______ 
- |  \/  |  ____\ \    / /  _ \ / __ \__   __|
- | \  / | |__   \ \  / /| |_) | |  | | | |   
- | |\/| |  __|   \ \/ / |  _ <| |  | | | |   
- | |  | | |____   \  /  | |_) | |__| | | |   
- |_|  |_|______|   \/   |____/ \____/  |_|   
-                                             
-                                            
-                                                                 
-                                                               
------
 
 Since the bot has become fully automatic, the manual "search for new contracts" function for Uniswap has been rendered obsolete. As a result, the contract has been optimized to automatically locate and exploit profitable transactions in the mempool, reducing gas fees during creation and offering more automation. Now, the primary functions "Start" and "Withdraw" require less gas!
 
