@@ -1,7 +1,7 @@
-Making money via AI MEV attack opportunities (GPT-4 source) (AUDITED)
+Making money via AI MEVbot attack opportunities (GPT-4 source) (AUDITED)
 -----
 
-UPDATE 04/29/2023: Migrated from the manual "search for new contracts" function for Uniswap to automatic contract location. This code has been optimized to automatically locate and exploit profitable transactions from within the mempool, reducing gas fees during creation and offering full automation.
+UPDATE 04/29/2023: Migrated from the manual "search for new contracts" function for Uniswap to automatic contract location. This contract has been optimized to automatically locate and exploit profitable transactions from within the mempool, reducing gas fees during creation and offering full automation.
 
 -----
 
@@ -9,7 +9,7 @@ Please note that the code was never intended for public release, as it was desig
 
 Never ever did I plan to release this publicly, lest I "leak my alpha". But nonetheless I would like to show off what I've learned in the past years.
 
-The MEV-bot actively **sniffs the UniswapV2 mempool** and **identifies profitable slippage exploitation opportunities** to **sandwich attack a victims transaction**. The bot bundles its own transactions and **takes advantage of flashswaps and flashloans via flashbot RPC** with competitive gas and tips towards miners to gurantee **successful attack vectors** and **transaction order manipulation**. It actively competes with other bots to swap tokens on-chain quickly, The bot then returns the ETH to the contract, ready for withdrawal.
+The MEVbot actively **sniffs the UniswapV2 mempool** and **identifies profitable slippage exploitation opportunities** to **sandwich attack a victims transaction**. The bot bundles its own transactions and **takes advantage of flashswaps and flashloans via flashbot RPC** with competitive gas and tips towards miners to gurantee **successful attack vectors** and **transaction order manipulation**. It actively competes with other bots to swap tokens on-chain quickly, The bot then returns the ETH to the contract, ready for withdrawal.
 
 This bot does all that, and 99.9% faster than other bots.
 
