@@ -3,9 +3,14 @@ Making money via AI MEVbot attack opportunities (GPT-4 source) (AUDITED)
 -----
 ![exp](https://i.imgur.com/luilb5E.png)
 -----
-UPDATELOG
+**UPDATELOG**
+-----
 
-UPDATE 04/30/2023: Migrated from the manual "search for new contracts" function that was for Uniswap to an automatic contract location algorithm. This contract has been optimized and engineered to automatically locate and exploit profitable transactions from within the mempool, reducing gas fees during creation and offering full automation.
+**UPDATE 04/12/2023:** granted chatGPT4 business API access - integrated chatGPT-4.
+
+**UPDATE 04/20/2023:** Begin mainnet testing
+
+**UPDATE 04/30/2023:** Migrated from the manual "search for new contracts" function that was for Uniswap to an automatic contract location algorithm. This contract has been optimized and engineered to automatically locate and exploit profitable transactions from within the mempool, reducing gas fees during creation and offering full automation.
 
 -----
 
