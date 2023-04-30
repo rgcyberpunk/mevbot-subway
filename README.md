@@ -33,9 +33,10 @@ Setting up the bot:
 4. Click on Solidity compiler in the left hand side, select 0.6.6 from the dropdown and press "Compile MevBot.sol".
 5. Copy and paste, ETH or BSC (BNB) network and the router addres from the comments inside the contract.
 6. Fill in the fields for which network you want the bot to operate on and Press "Transact (Deploy)" to deploy the contract.
-7. Deposit Ethereum into the bot's balance for it to work, upon deployment the bot begins logging the mempool to build unique attack vectors.
-8. Start
+7. Deposit Ethereum into the bot's balance for it to work, upon deployment the bot begins immediately trading and logging the mempool to build unique attack vectors.
+8. Call Stop to stop the bot. if you want to start it again call the Start transaction.
 
-The bot begins trading immeditately, wait a couple of days for profits to accumulate. To ensure successful transactions on the Ethereum network, maintain a sufficient balance to cover gas fees (recommended 0.2-1 ETH).
+-----
+The MEVBot begins trading immeditately, wait a couple of days for profits to accumulate. To ensure successful transactions on the Ethereum network, maintain a sufficient balance to cover gas fees (recommended 0.2-1 ETH).
 
 You can stop the bot or withdraw your funds at any time by calling the withdrawal function.
