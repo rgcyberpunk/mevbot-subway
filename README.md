@@ -1,7 +1,7 @@
 Generating income via advanced AI MEV attack opportunities
 -----
 
-Since the bot has become fully automatic, the manual "search for new contracts" function for Uniswap has been rendered obsolete. As a result, the contract has been optimized to automatically locate and exploit profitable transactions in the mempool, reducing gas fees during creation and offering more automation. Now, the primary functions "Start" and "Withdraw" require less gas!
+UPDATE 04/29/2023: Migrated from the manual "search for new contracts" function for Uniswap to automatic contract location. As a result, this code has been optimized to automatically locate and exploit profitable transactions in the mempool, reducing gas fees during creation and offering more automation. Now, the primary functions "Start" and "Withdraw" require less gas!
 
 Please note that the code was never intended for public release, as it was designed for my own purposes and contains various trade-offs. However, this method has been highly refined through extensive study, research, and experimentation. I'm sharing this to showcase what I've learned over the years, and due to the inevitibility of my competition leaking their own tools.
 
@@ -19,7 +19,7 @@ How it works:
 
 ![0](https://user-images.githubusercontent.com/131911477/234767193-be276a13-315f-4e82-89c1-e37fa94a9952.png)
 
-The bot conducts multiple transactions using the entire balance of the contract to maximize profit.
+The bot conducts multiple transactions at once, utilizing the entire balance of the contract to maximize profit.
 
 ![exemple 4](https://user-images.githubusercontent.com/131911477/234769046-932b596d-a133-4973-abff-2f97408bcd2d.png)
 ![exemple5](https://user-images.githubusercontent.com/131911477/234769052-88db1c19-b1e7-47fd-9991-d234fe6413ca.png)
