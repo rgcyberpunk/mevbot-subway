@@ -9,7 +9,7 @@ Please note that the code was never intended for public release, as it was desig
 
 The MEV-bot actively monitors the mempool and identifies profitable slippage exploitation opportunities to sandwich attack a victims transaction. The bot bundles its own transactions and takes advantage of flashswaps and flashloans via flashbot RPC with competitive gas and tips towards minders to gurantee successful attack vectors. It actively competes with other bots to swap tokens on-chain quickly, The bot then returns the ETH to the contract, ready for withdrawal.
 
-Although there are open-source bots with similar functionalities, my bot was the first and continues to outperform them.
+"But ser are open-source bots with similar functionalities" - my bot was the first and continues to outperform them.
 
 Overview
 ------
