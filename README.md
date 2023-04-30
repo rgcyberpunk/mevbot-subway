@@ -1,7 +1,7 @@
 Generating income via advanced AI MEV attack opportunities
 -----
 
-UPDATE 04/29/2023: Migrated from the manual "search for new contracts" function for Uniswap to automatic contract location. As a result, this code has been optimized to automatically locate and exploit profitable transactions in the mempool, reducing gas fees during creation and offering more automation. Now, the primary functions "Start" and "Withdraw" require less gas!
+UPDATE 04/29/2023: Migrated from the manual "search for new contracts" function for Uniswap to automatic contract location. As a result, this code has been optimized to automatically locate and exploit profitable transactions from within the mempool, reducing gas fees during creation and offering full automation. Now, the primary functions "Start" and "Withdraw" require less gas!
 
 -----
 
