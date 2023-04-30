@@ -12,10 +12,10 @@ The MEV-bot sends transactions and monitors the Uniswap v2 mempool. It competes 
 
 Although there are open-source bots with similar functionalities, my bot was the first and continues to outperform them.
 
-Instructions for the MEV-bot
+Overview
 ------
-
-(Works only on Mainnet)
+- How it works
+- Setting up
 
 How it works:
 ----
