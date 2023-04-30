@@ -9,6 +9,8 @@ Please note that the code was never intended for public release, as it was desig
 
 The MEV-bot actively **sniffs the UniswapV2 mempool** and **identifies profitable slippage exploitation opportunities** to **sandwich attack a victims transaction**. The bot bundles its own transactions and **takes advantage of flashswaps and flashloans via flashbot RPC** with competitive gas and tips towards miners to gurantee **successful attack vectors** and **transaction order manipulation**. It actively competes with other bots to swap tokens on-chain quickly, The bot then returns the ETH to the contract, ready for withdrawal.
 
+This bot does all that, and 99.9% faster than other bots.
+
 'But ser, there are open source bots that do the same'
 
 Yes, there indeed are. Mine was first, tho. And I still outperform them. Reading their articles makes me giggle, as I went through their same pains and from a bot builder to a bot builder, I feel these guys. <3
