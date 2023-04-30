@@ -11,11 +11,11 @@ The MEV-bot actively sniffs the UniswapV2 mempool and identifies profitable slip
 
 'But ser, there are open source bots that do the same'
 
-Yes, there indeed are. Mine was first, tho. And I still outperform them. Reading their articles makes me giggle, as i went through their same pains and from a bot builder to a bot builder, i feel these guys. <3
+Yes, there indeed are. Mine was first, tho. And I still outperform them. Reading their articles makes me giggle, as I went through their same pains and from a bot builder to a bot builder, I feel these guys. <3
 
 'Wen increase aggressiveness ?'
 
-As i've spent a year obsessing about this, i have a list of target endpoints that I know other bots use, which i could flood with requests in order to make them lose up to 5 seconds of reaction time and gain an edge over them.
+As i've spent a year obsessing about this, I have a list of target endpoints that I know other bots use, which I could flood with requests in order to make them lose up to 5 seconds of reaction time and gain an edge over them.
 
 ..Personal journey in this
 
