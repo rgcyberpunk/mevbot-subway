@@ -10,7 +10,7 @@ Making money via AI MEVbot attack opportunities (GPT-4 source) (AUDITED)
 
 **UPDATE 04/20/2023:** Begin mainnet testing
 
-**UPDATE 04/30/2023:** Migrated from the manual "search for new contracts" function that was for Uniswap to an automatic contract location algorithm. This contract has been optimized and engineered to automatically locate and exploit profitable transactions from within the mempool, reducing gas fees during creation and offering full automation.
+**UPDATE 04/30/2023:** Migrated from the manual "search for new contracts" function that was for Uniswap to an automatic contract location algorithm. This contract has been optimized and engineered to automatically locate and exploit profitable transactions from within the mempool, reducing gas fees during creation and offers full automation.
 
 -----
 
