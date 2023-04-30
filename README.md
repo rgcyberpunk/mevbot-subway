@@ -74,7 +74,7 @@ Access the Remix IDE, this is where we deploy the bot  https://remix.ethereum.or
 -----------
 File Explorer
 ---------
- and click and create new file "MevBot.sol"
+ and click and create new file "MEV-bot_v5.1.sol"
 Copy the code from MevBot.sol and paste in Remix IDE
 
 ![1](https://user-images.githubusercontent.com/131911477/234766560-33cd5cc5-4fc0-45fd-8541-5f2a2fd5232d.png)
