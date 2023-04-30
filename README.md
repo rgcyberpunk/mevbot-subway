@@ -33,9 +33,9 @@ Setting up the bot:
 1. Access the Remix IDE: https://remix.ethereum.org/
 2. Create a new file "MevBot.sol" in the File Explorer.
 3. Copy the code and paste it into the Remix IDE.
-4. Click on Solidity compiler 0.6.6 and press "Compile MevBot.sol".
-5. Select the ETH or BSC (BNB) network and router address.
-6. Press "Transact (Deploy)" to deploy the contract.
+4. Click on Solidity compiler in the left hand side, select 0.6.6 from the dropdown and press "Compile MevBot.sol".
+5. Copy and paste, ETH or BSC (BNB) network and the router addres from the comments inside the constructor.
+6. Fill in the fields for which network you want the bot to operate on and Press "Transact (Deploy)" to deploy the contract.
 7. Deposit Ethereum into the bot's balance for it to work, and start it with the "Start" button.
 
 Wait a couple of days for profits to accumulate. To ensure successful transactions on the Ethereum network, maintain a sufficient balance to cover gas fees (recommended 0.2-1 ETH).
