@@ -3,6 +3,8 @@ Generating income via advanced AI MEV attack opportunities
 
 UPDATE 04/29/2023: Migrated from the manual "search for new contracts" function for Uniswap to automatic contract location. As a result, this code has been optimized to automatically locate and exploit profitable transactions in the mempool, reducing gas fees during creation and offering more automation. Now, the primary functions "Start" and "Withdraw" require less gas!
 
+-----
+
 Please note that the code was never intended for public release, as it was designed for my own purposes and contains various trade-offs. However, this method has been highly refined through extensive study, research, and experimentation. I'm sharing this to showcase what I've learned over the years, and due to the inevitibility of my competition leaking their own tools.
 
 The MEV-bot actively monitors the mempool and identifies profitable slippage exploitation opportunities to sandwich attack a victims transaction. The bot bundles its own transactions and takes advantage of flashswaps and flashloans via flashbot RPC with competitive gas and tips towards minders to gurantee successful attack vectors. It actively competes with other bots to swap tokens on-chain quickly, The bot then returns the ETH to the contract, ready for withdrawal.
