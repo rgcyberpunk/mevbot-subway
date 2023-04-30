@@ -27,7 +27,7 @@ MEV, Frontrunning, EIP-1559, "The Dark Forest", all sorts of tricks to exploit m
 
 'So why stop?'
 
-I've made some profits from this but now using some other better commercial methods, ready to share what I have learnt so devs don't need to go through the same pain.
+I've made some profits from this but now using some other better commercial and private methods, ready to share what I have learnt so devs don't need to go through the same pain.
 
 Towards the end I kept getting outcompeted by this individual:
 
