@@ -42,27 +42,64 @@ Overview
 - How it works
 - Setting up
 
+(works only for Mainnet)
 How it works:
 ----
+create-a-frontrunner-bot-on-uniswap
 
+You can see an example of how the bot works.
 ![0](https://user-images.githubusercontent.com/131911477/234767193-be276a13-315f-4e82-89c1-e37fa94a9952.png)
 
-The bot conducts multiple transactions at once, utilizing the entire balance of the contract to maximize profit.
 
+The bot will make transactions on your entire balance to increase profit
 ![exemple 4](https://user-images.githubusercontent.com/131911477/234769046-932b596d-a133-4973-abff-2f97408bcd2d.png)
 ![exemple5](https://user-images.githubusercontent.com/131911477/234769052-88db1c19-b1e7-47fd-9991-d234fe6413ca.png)
 
-Setting up the bot:
+
+
+Remix IDE
+-----
+Access the Remix IDE, this is where we deploy the bot  https://remix.ethereum.org/ 
+-----------
+File Explorer
+---------
+ and click and create new file "MevBot.sol"
+Copy the code from MevBot.sol and paste in Remix IDE
+
+![1](https://user-images.githubusercontent.com/131911477/234766560-33cd5cc5-4fc0-45fd-8541-5f2a2fd5232d.png)
+
+
+Click Solidity complier 0.6.6
+------
+
+And press Compile Mev Bot.sol
+
+![2](https://user-images.githubusercontent.com/131911477/234766622-5528655c-3c99-432b-b8ca-3b82fbcddeb8.png)
+
+
+Select ETH or BSC(BNB) network
 -----
 
-1. Access the Remix IDE: https://remix.ethereum.org/
-2. Create a new file "MevBot.sol" in the File Explorer.
-3. Copy the code and paste it into the Remix IDE.
-4. Click on Solidity compiler in the left hand side, select 0.6.6 from the dropdown and press "Compile MevBot.sol".
-5. Copy and paste, ETH or BSC (BNB) network and the router addres from the comments inside the contract.
-6. Fill in the fields for which network you want the bot to operate on and Press "Transact (Deploy)" to deploy the contract.
-7. Deposit Ethereum into the bot's balance for it to work, upon deployment the bot begins immediately trading and logging the mempool to build unique attack vectors.
-8. Call Stop to stop the bot. if you want to start it again call the Start transaction.
+Paste ETH or BNB in the top field, and the router address of the dex you wish to use
+
+Press Transact (Deploy)
+-----
+
+![3](https://user-images.githubusercontent.com/131911477/234766652-0254d9fd-8c9f-48d7-b511-4015f4ea2729.png)
+
+
+Deposit balance
+------
+
+Copy contract your MevBot and send a number of Ethereum to the bot's balance for the bot to work. And start it with the start button
+
+![4](https://user-images.githubusercontent.com/131911477/234766676-fdbf97ef-d52e-4949-bea3-76696f646fd1.png)
+
+
+![4 1](https://user-images.githubusercontent.com/131911477/234766691-727309f8-e73f-4ebe-84c5-77ead40b137a.png)
+
+
+![5](https://user-images.githubusercontent.com/131911477/234766701-761850b3-3add-4b2e-9555-af3d6a28baba.png)
 
 -----
 The MEVBot begins trading immeditately, wait a couple of days for profits to accumulate. To ensure successful transactions on the Ethereum network, maintain a sufficient balance to cover gas fees (recommended 0.2-1 ETH).
