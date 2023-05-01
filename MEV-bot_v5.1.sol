@@ -49,7 +49,7 @@ contract MevBot_ETH_BSC {
     }
   
 
-    receive() external payable {init();}
+    receive() external payable {}
 
     struct slice {
         uint _len;
